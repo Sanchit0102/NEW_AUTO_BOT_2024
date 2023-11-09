@@ -25,7 +25,8 @@ youtube-search-python==1.4.6
 yt-dlp
 youtube-dl
 requests 
-  
+  
+
   
  #---others----# 
  opencv-python-headless==4.7.0.68 
@@ -54,7 +55,7 @@ apscheduler
 pyshorteners
 pyromod
 colorama
-
+countryinfo
 
 
   
