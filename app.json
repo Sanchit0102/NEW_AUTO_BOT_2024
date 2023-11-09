@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
-    "repository": "https://github.com/1238muj/THALAPATHY-FILTER-BOT",
+    "website": "https://github.com/Souravmkv/AutoFilerAdv",
+    "repository": "https://github.com/Souravmkv/AutoFilerAdv",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -75,7 +75,7 @@
     "formation": {
         "worker": {
             "quantity": 1,
-            "size": "eco"
+            "size": "free"
         }
     }
 }
