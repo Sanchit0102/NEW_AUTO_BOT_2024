@@ -1508,8 +1508,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
-            )
-    
+        )    
     elif query.data == "dicl_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
@@ -1557,9 +1556,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=(script.OWNER_INFO),
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML
-            )
-
-    elif query.data.startswith("setgs"): 
+        )     
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
