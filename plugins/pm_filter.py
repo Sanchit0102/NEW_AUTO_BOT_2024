@@ -583,6 +583,8 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             pass
     await query.answer()
     
+#Qulity
+
 @Client.on_callback_query(filters.regex(r"^quality#"))
 async def quality_cb_handler(client: Client, query: CallbackQuery):
 
@@ -628,7 +630,7 @@ async def quality_cb_handler(client: Client, query: CallbackQuery):
     btn.append([InlineKeyboardButton(text="↭ ʙᴀᴄᴋ ᴛᴏ ꜰɪʟᴇs ↭", callback_data=f"fl#homepage#{key}")])
 
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
-
+    
 @Client.on_callback_query(filters.regex(r"^fq#"))
 async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
     _, lang, key = query.data.split("#")
