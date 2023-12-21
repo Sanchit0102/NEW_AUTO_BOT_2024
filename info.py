@@ -58,10 +58,10 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+Q3Y_XS79svY3NDI1')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+p--DDGSElUtlNDY1')
 SPRT_GRP = environ.get('SPRT_GRP', 'https://t.me/+p--DDGSElUtlNDY1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+0silU4tAg21lMTU1')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+Q3Y_XS79svY3NDI1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+p--DDGSElUtlNDY1')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+p--DDGSElUtlNDY1')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/sauravMkv')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
@@ -118,6 +118,7 @@ else:
 
 LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
 
+QUALITY = ["PreDvd", "S Print", "480P", "720P" ,"1080P", "2160P"]
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
 
