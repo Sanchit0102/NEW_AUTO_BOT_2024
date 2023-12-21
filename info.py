@@ -118,7 +118,7 @@ else:
 
 LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
 
-QUALITY = ["PreDvd", "S Print", "480P", "720P" ,"1080P", "2160P"]
+QUALITY = ["PreDvd", "S Print", "HDTS", "HDTC", "480P", "720P" ,"1080P", "2160P"]
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
 
