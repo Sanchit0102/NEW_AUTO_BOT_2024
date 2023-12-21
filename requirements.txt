@@ -12,7 +12,7 @@ pytz
 aiohttp
 jinja2
 
-
+shortzy
 
 telegraph==2.2.0
 gTTS==2.3.1
