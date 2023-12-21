@@ -587,7 +587,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
 
 #Qulity
 
-@Client.on_callback_query(filters.regex(r"^quality#"))
+@Client.on_callback_query(filters.regex(r"^qualities#"))
 async def quality_cb_handler(client: Client, query: CallbackQuery):
 
     try:
