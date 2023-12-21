@@ -110,7 +110,7 @@ Gʀᴏᴜᴘ = {}(<code>{}</code>)
 Tᴏᴛᴀʟ Mᴇᴍʙᴇʀs = <code>{}</code>
 Aᴅᴅᴇᴅ Bʏ - {}"""
     
-    DISCLAIMER_TXT = """ 𝑯𝒆𝒚 {}.😈
+    DISCLAIMER_TXT = """ 𝑯𝒆𝒚 {}.😈\n
     Tʜɪꜱ Iꜱ Aɴ Oᴘᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ.
 
 Aʟʟ Tʜᴇ Fɪʟᴇꜱ Iɴ Tʜɪꜱ Bᴏᴛ Aʀᴇ Fʀᴇᴇʟʏ Aᴠᴀɪʟᴀʙʟᴇ Oɴ Tʜᴇ Iɴᴛᴇʀɴᴇᴛ Oʀ Pᴏꜱᴛᴇᴅ Bʏ Sᴏᴍᴇʙᴏᴅʏ Eʟꜱᴇ.
@@ -121,7 +121,7 @@ Iꜰ Aɴʏᴛʜɪɴɢ Iꜱ Aɢᴀɪɴꜱᴛ Lᴀᴡ Pʟᴇᴀꜱᴇ Cᴏɴᴛᴀ
 ɪꜰ Yᴏᴜ Bᴇʟɪᴇᴠᴇ Tʜɪꜱ Bᴏᴛ ɪꜱ Vɪᴏʟᴀᴛɪɴɢ Yᴏᴜʀ Iɴᴛᴇʟʟᴇᴄᴛᴜᴀʟ Pʀᴏᴘᴇʀᴛʏ, Cᴏɴᴛᴀᴄᴛ Tʜᴇ Rᴇꜱᴘᴇᴄᴛɪᴠᴇ Cʜᴀɴɴᴇʟꜱ Fᴏʀ Rᴇᴍᴏᴠᴀʟ.
 Tʜᴇ Bᴏᴛ Dᴏᴇꜱ Nᴏᴛ Oᴡɴ Aɴʏ Oꜰ Tʜᴇꜱᴇ Cᴏɴᴛᴇɴᴛꜱ, Iᴛ Oɴʟʏ Iɴᴅᴇx Tʜᴇ Fɪʟᴇꜱ Fʀᴏᴍ Tᴇʟᴇɢʀᴀᴍ. 
 
-🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='t.me/unknownBotz'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
+🔋 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='t.me/ALGEBRA_1101'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a>"""
     
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
@@ -166,7 +166,7 @@ Nᴀᴍᴇ - {}"""
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ : Uɴᴋɴᴏᴡɴ
 • ᴜꜱᴇʀɴᴀᴍᴇ : @ALGEBRA_1101
-• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/ALGEBRA_1101'>ᴊᴀɢᴀᴅɪsʜ/a></b>"""
+• ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='https://t.me/ALGEBRA_1101'>ᴊᴀɢᴀᴅɪsʜ</a></b>"""
 
     REQINFO = """
 ⚠ ɪɴꜰᴏʀᴍᴀᴛɪᴏɴ ⚠
@@ -207,10 +207,10 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b><code><a href="https://t.me/Unknown_Cinema">{file_name}</a></code>
+<b>{file_name}</b>
 
-@Unknown_Cinema
-@Unknown_Request
+@JDMOVIES322021
+@JDMOVIES322026
 </b>"""
     
     EX_FEATURE_TXT = """Yᴏᴜ Cᴀɴ Tʀʏ Aʟʟ Tʜᴇsᴇ Cᴏᴏʟ Fᴇᴀᴛᴜʀᴇs Fʀᴏᴍ Bᴇʟᴏᴡ Oᴘᴛɪᴏɴ..!!!"""
