@@ -966,16 +966,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=short_{file_id}")
                     return
                 else:
-                    temp.SHORT[clicked] = query.message.chat.id
-                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=short_{file_id}")
-                    return
+                    
             else:
                 if clicked == typed:
                     await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
                     return
                 else:
-                    await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start={ident}_{file_id}")
-                    return
+                    
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
         except PeerIdInvalid:
