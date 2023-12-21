@@ -11,6 +11,7 @@ pyrogram>=2.0.30
  datetime 
  pytz 
  aiohttp
+ jinja2
 
 #---master---# 
  #Telethroid==0.0.10 
@@ -50,12 +51,6 @@ python-decouple
 ffmpeg-python>=0.2.0
 ytthumb
 
-jinja2
-apscheduler
-pyshorteners
-pyromod
-colorama
-countryinfo
 
 
   
