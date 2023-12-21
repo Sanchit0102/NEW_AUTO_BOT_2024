@@ -582,8 +582,8 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
         except MessageNotModified:
             pass
     await query.answer()
-
- @Client.on_callback_query(filters.regex(r"^quality#"))
+    
+@Client.on_callback_query(filters.regex(r"^quality#"))
 async def quality_cb_handler(client: Client, query: CallbackQuery):
 
     try:
