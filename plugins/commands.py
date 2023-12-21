@@ -26,7 +26,7 @@ async def start(client, message):
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=GRP_LNK) 
                   ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="http://t.me/sauravjoshi2007")
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=GRP_LNK)
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
