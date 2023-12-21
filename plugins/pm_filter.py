@@ -1643,12 +1643,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+
     elif query.data == "owner_info":
-            btn = [[
+        buttons = [[
                     InlineKeyboardButton("⟸ Bᴀᴄᴋ", callback_data="start"),
                     InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ", url="https://t.me/ALGEBRA_1101")
-                  ]]
-        reply_markup = InlineKeyboardMarkup(btn)
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -1658,7 +1659,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.OWNER_INFO,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )    
+        ) 
+         
     elif query.data == "dicl_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
