@@ -1585,8 +1585,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(' ᴄᴏᴜɴᴛʀʏ ', callback_data='country'), 
             InlineKeyboardButton(' Kang ', callback_data='country')
         ],[
-            InlineKeyboardButton(' Filters ', callback_data='country'), 
-            InlineKeyboardButton(' File Store ', callback_data='country')
+            InlineKeyboardButton(' Filters ', callback_data='filters'), 
+            InlineKeyboardButton(' File Store ', callback_data='store_file')
         ],[
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='about')
         ]]       
