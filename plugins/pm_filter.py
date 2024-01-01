@@ -1576,13 +1576,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "mods":
         buttons = [[
-            InlineKeyboardButton('🖼️ Tᴇʟᴇɢʀᴀᴘʜ 🔭', callback_data='tele'), 
-            InlineKeyboardButton('🎭 Sᴛɪᴄᴋᴇʀ_ɪᴅ ⚜️', callback_data='sticker')
+            InlineKeyboardButton(' Tᴇʟᴇɢʀᴀᴘʜ ', callback_data='tele'), 
+            InlineKeyboardButton(' Sᴛɪᴄᴋᴇʀ_ɪᴅ ⚜', callback_data='sticker')
         ],[ 
-            InlineKeyboardButton('🙌 Fᴏɴᴛ Gᴇɴᴇʀᴀᴛᴏʀ 📝', callback_data='font'), 
-            InlineKeyboardButton('🔭 Sᴛᴀᴛs 📊', callback_data='stats')
+            InlineKeyboardButton(' Fᴏɴᴛ Gᴇɴᴇʀᴀᴛᴏʀ ', callback_data='font'), 
+            InlineKeyboardButton(' Sᴛᴀᴛs ', callback_data='stats')
         ],[
-            InlineKeyboardButton('🌐 ᴄᴏᴜɴᴛʀʏ 🔅', callback_data='country')
+            InlineKeyboardButton(' ᴄᴏᴜɴᴛʀʏ ', callback_data='country'), 
+            InlineKeyboardButton(' Kang ', callback_data='country')
+        ],[
+            InlineKeyboardButton(' Filters ', callback_data='country'), 
+            InlineKeyboardButton(' File Store ', callback_data='country')
         ],[
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='about')
         ]]       
