@@ -1748,7 +1748,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
-            InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='rfrsh')
+            InlineKeyboardButton('⟲ Rᴇғʀᴇsʜ', callback_data='mods')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1811,7 +1811,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
          
     elif query.data == "dicl_btn":
         buttons = [[
-            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='about')
+            InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
