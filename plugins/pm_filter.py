@@ -1590,7 +1590,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Fɪʟᴛᴇʀs', callback_data='filters'), 
             InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
         ],[
-            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='about')
+            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='extra')
         ]]       
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1640,6 +1640,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
        )  
+
+    elif query.data == "kang":
+        buttons = [[
+            InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='mods')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FONT_TXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        ) 
     elif query.data == "source":
         buttons = [[
             InlineKeyboardButton('About', callback_data='about')
@@ -1651,14 +1662,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         await query.message.edit_text(
-            text=script.SOURCE_TXT,
+            text=script.KANG_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
     
     elif query.data == "manuelfilter":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='manuelfilter')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='filters')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
@@ -1720,7 +1731,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "store_file":
         buttons = [[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help')
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='mods')
         ]]
         await client.edit_message_media(
             query.message.chat.id, 
