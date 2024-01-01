@@ -1469,7 +1469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Mᴀɴᴜᴀʟ FIʟᴛᴇʀ', callback_data='manuelfilter'),
             InlineKeyboardButton('Aᴜᴛᴏ FIʟᴛᴇʀ', callback_data='autofilter')
         ],[
-            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='help'),
+            InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='mods'),
             InlineKeyboardButton('Gʟᴏʙᴀʟ Fɪʟᴛᴇʀs', callback_data='global_filters')
         ]]
         
@@ -1521,10 +1521,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )  
     elif query.data == "extra":
         buttons = [[
-            InlineKeyboardButton(' Usᴇʀs', callback_data='users'),
-            InlineKeyboardButton(' Aᴅᴍɪɴs', callback_data='admin')            
+            InlineKeyboardButton('Exᴛʀᴀ Fᴇᴀᴛᴜʀᴇs', callback_data='mods')
+                      
         ],[
-            InlineKeyboardButton('Extra', callback_data='mods'), 
+            InlineKeyboardButton(' Usᴇʀs', callback_data='users'),
+            InlineKeyboardButton(' Aᴅᴍɪɴs', callback_data='admin')
+        ],[
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
         ]]
         await client.edit_message_media(
@@ -1582,11 +1584,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(' Fᴏɴᴛ Gᴇɴᴇʀᴀᴛᴏʀ ', callback_data='font'), 
             InlineKeyboardButton(' Sᴛᴀᴛs ', callback_data='stats')
         ],[
-            InlineKeyboardButton(' ᴄᴏᴜɴᴛʀʏ ', callback_data='country'), 
-            InlineKeyboardButton(' Kang ', callback_data='country')
+            InlineKeyboardButton(' Cᴏᴜɴᴛʀʏ ', callback_data='country'), 
+            InlineKeyboardButton('Kᴀɴɢ', callback_data='kang')
         ],[
-            InlineKeyboardButton(' Filters ', callback_data='filters'), 
-            InlineKeyboardButton(' File Store ', callback_data='store_file')
+            InlineKeyboardButton('Fɪʟᴛᴇʀs', callback_data='filters'), 
+            InlineKeyboardButton('Fɪʟᴇ Sᴛᴏʀᴇ', callback_data='store_file')
         ],[
             InlineKeyboardButton('‹‹‹ Bᴀᴄᴋ', callback_data='about')
         ]]       
