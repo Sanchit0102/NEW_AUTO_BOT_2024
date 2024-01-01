@@ -1524,7 +1524,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton(' Usᴇʀs', callback_data='users'),
             InlineKeyboardButton(' Aᴅᴍɪɴs', callback_data='admin')            
         ],[
-            InlineKeyboardButton('', callback_data='start'), 
+            InlineKeyboardButton('Extra', callback_data='mods'), 
             InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='start')
         ]]
         await client.edit_message_media(
