@@ -26,6 +26,3 @@ pytz
 dnspython==2.3.0
 python-telegram-bot==12.8
 datetime
-countryinfo
-telegraph==2.2.0
-python-math
