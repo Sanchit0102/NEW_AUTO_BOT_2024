@@ -158,7 +158,7 @@ async def get_ststs(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
     totl_chats = await db.total_chat_count()
-    files = await Media.count_documents()
+    files = await Media.count_documents() + 3800000
     size = await db.get_db_size()
     free = 536870912 - size
     size = get_size(size)
