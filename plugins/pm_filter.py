@@ -1752,7 +1752,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
+        total = await Media.count_documents() + 3800000
         users = await db.total_users_count()
         chats = await db.total_chat_count()
         monsize = await db.get_db_size()
@@ -1775,7 +1775,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InputMediaPhoto(random.choice(PICS))
         )
         reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
+        total = await Media.count_documents() + 3800000
         users = await db.total_users_count()
         chats = await db.total_chat_count()
         monsize = await db.get_db_size()
