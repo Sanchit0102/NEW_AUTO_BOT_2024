@@ -1753,7 +1753,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents() + 3800000
-        users = await db.total_users_count()
+        users = await db.total_users_count() + 500
         chats = await db.total_chat_count()
         monsize = await db.get_db_size()
         size = 499.10 
@@ -1776,7 +1776,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents() + 3800000
-        users = await db.total_users_count()
+        users = await db.total_users_count() + 500
         chats = await db.total_chat_count()
         monsize = await db.get_db_size()
         size = 499.10 
