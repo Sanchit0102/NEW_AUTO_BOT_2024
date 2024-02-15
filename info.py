@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25902975'))
 API_HASH = environ.get('API_HASH', 'bf9ebb30c8c6c4745031de8452d06025')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6352103721:AAFijtpLzrowkKKkEliASM2dkKA8HRQ1AQg")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAGEz8l1IVs7GpXlZVWcOSnC45oVd5UF_Ds")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -45,9 +45,9 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://AutoFilterStream:jFN0WaU92ekPaO6R@cluster0.jqpymap.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "AutoFilterStream")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://AutoFilter:B2v1nAKDMuGmyWJ9@cluster0.kdqcnvh.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "AutoFilter")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutoFilter')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
@@ -65,7 +65,7 @@ TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+CRxXz6AAWTQ4ZWFl')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+CRxXz6AAWTQ4ZWFl')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001961583707'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001807254628'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DQ_The_File_Donor_Support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -94,8 +94,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://unknowncinema-66ee2ce71c6a.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://unknowncinema-66ee2ce71c6a.herokuapp.com/".format(FQDN, PORT)
+URL = "https://unknownbotz-ed92d1ac3c6e.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://unknownbotz-ed92d1ac3c6e.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -110,9 +110,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://unknowncinema-66ee2ce71c6a.herokuapp.com/".format(FQDN)
+    URL = "https://unknownbotz-ed92d1ac3c6e.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://unknowncinema-66ee2ce71c6a.herokuapp.com/".format(FQDN)
+    URL = "https://unknownbotz-ed92d1ac3c6e.herokuapp.com/".format(FQDN)
 
 
 
