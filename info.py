@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25902975'))
 API_HASH = environ.get('API_HASH', 'bf9ebb30c8c6c4745031de8452d06025')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAGEz8l1IVs7GpXlZVWcOSnC45oVd5UF_Ds")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAHe5oYY4m8UgdfsDphlPbge4fdXlx9d5Ng")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -94,8 +94,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://unknownibot-a26e55d7bc19.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://unknownibot-a26e55d7bc19.herokuapp.com/".format(FQDN, PORT)
+URL = "https://unknown-ibot-edbe6d7a2d02.herokuapp.com".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://unknown-ibot-edbe6d7a2d02.herokuapp.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -110,9 +110,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://unknownibot-a26e55d7bc19.herokuapp.com/".format(FQDN)
+    URL = "https://unknown-ibot-edbe6d7a2d02.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://unknownibot-a26e55d7bc19.herokuapp.com/".format(FQDN)
+    URL = "https://unknown-ibot-edbe6d7a2d02.herokuapp.com/".format(FQDN)
 
 
 
