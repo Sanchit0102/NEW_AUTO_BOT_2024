@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '25902975'))
 API_HASH = environ.get('API_HASH', 'bf9ebb30c8c6c4745031de8452d06025')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAHe5oYY4m8UgdfsDphlPbge4fdXlx9d5Ng")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAExCwb9RDjvqjItHHegBPfA_7lcYPBpL4Y")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -110,9 +110,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://unknown-ibot-edbe6d7a2d02.herokuapp.com/".format(FQDN)
+    URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
 else:
-    URL = "https://unknown-ibot-edbe6d7a2d02.herokuapp.com/".format(FQDN)
+    URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
 
 
 
