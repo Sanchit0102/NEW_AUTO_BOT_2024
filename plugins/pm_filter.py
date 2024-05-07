@@ -31,7 +31,6 @@ from database.gfilters_mdb import (
     del_allg
 )
 import logging
-from urllib.parse import quote_plus
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
