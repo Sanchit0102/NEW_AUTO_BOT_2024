@@ -1147,6 +1147,19 @@ async def removetutorial(bot, message):
     await save_group_settings(grpid, 'is_tutorial', False)
     await reply.edit_text(f"<b>Successfully Removed Your Tutorial Link!!!</b>")
 
+@Client.on_message(filters.command("premium") & filters.private)
+async def premium_handler(bot, message):                
+    btn = [[
+            InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
+          ],[
+            InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close_data')
+          ]]
+    reply_markup = InlineKeyboardMarkup(btn)
+    await message.reply_text(
+          text=script.DS_TEXT,
+          reply_markup=reply_markup
+    )
+
 @Client.on_message(filters.command("restart") & filters.user(ADMINS))
 async def stop_button(bot, message):
     msg = await bot.send_message(text="**🔄 𝙿𝚁𝙾𝙲𝙴𝚂𝚂𝙴𝚂 𝚂𝚃𝙾𝙿𝙴𝙳. 𝙱𝙾𝚃 𝙸𝚂 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶...**", chat_id=message.chat.id)       
