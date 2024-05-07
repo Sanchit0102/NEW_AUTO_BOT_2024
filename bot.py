@@ -14,6 +14,8 @@ from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script
+from plugins import web_server
+
 from aiohttp import web
 from datetime import date, datetime 
 
@@ -132,7 +134,6 @@ app.run()
 # from pyrogram import types
 # from Script import script 
 # from aiohttp import web
-# from plugins import web_server
 
 # # import asyncio
 # # from pyrogram import idle
