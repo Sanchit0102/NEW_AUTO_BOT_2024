@@ -15,8 +15,6 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 
 from aiohttp import web
-from plugins import web_server
-
 class Bot(Client):
 
     def __init__(self):
