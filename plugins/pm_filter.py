@@ -151,7 +151,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton('', url=f"http://t.me/{temp.U_NAME}?start=buy_premium")
+            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     try:
         if settings['max_btn']:
@@ -378,7 +378,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton('', url=f"http://t.me/{temp.U_NAME}?start=buy_premium")
+            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
 
     if offset != "":
@@ -680,7 +680,7 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"http://t.me/{temp.U_NAME}?start=buy_premium")
+            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     else:
         btn = []
