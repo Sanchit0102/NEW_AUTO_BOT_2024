@@ -139,7 +139,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     else:
         btn = []
@@ -151,7 +151,7 @@ async def next_page(bot, query):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     try:
         if settings['max_btn']:
@@ -366,7 +366,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     else:
         btn = []
@@ -378,7 +378,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
 
     if offset != "":
@@ -543,7 +543,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             for file in files
         ]
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     else:
         btn = []
@@ -555,7 +555,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
         
     offset = 0
@@ -680,7 +680,7 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
     else:
         btn = []
@@ -692,7 +692,7 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
             ]
         )
         btn.insert(0, [
-            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")
+            InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")
         ])
 
     if offset != "":
@@ -713,7 +713,7 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
             )
     else:
         btn.append(
-            [InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url="https://t.me/DS_TESTER_BOT?start=buy_premium")]
+            [InlineKeyboardButton("Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥", url=f"https://t.me/{temp.U_NAME}?start=buy_premium")]
         )
     
     if not settings["button"]:
