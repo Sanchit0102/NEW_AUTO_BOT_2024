@@ -1,7 +1,6 @@
 import logging
 import logging.config
 
-	@@ -7,12 +12,19 @@
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("imdbpy").setLevel(logging.ERROR)
