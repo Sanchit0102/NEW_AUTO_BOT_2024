@@ -60,35 +60,20 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-    if message.command[1] == buy_premium:
-        buttons = [[
-            InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
-        ],[
-            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
-        ]]
-        
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "buy_premium"]:
+        if message.command[1] == "buy_premium":
+          buttons = [[
+                    InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
+                  ],[
+                    InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await client.send_text(
-            chat_id=message.from_user.id,
+        await message.reply_text(
             text=script.DS_TEXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )    
         return     
-    # if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "buy_premium"]:
-    #     if message.command[1] == "buy_premium":
-    #       buttons = [[
-    #                 InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
-    #               ],[
-    #                 InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
-    #               ]]
-    #     reply_markup = InlineKeyboardMarkup(buttons)
-    #     await message.reply_text(
-    #         text=script.DS_TEXT,
-    #         reply_markup=reply_markup,
-    #         parse_mode=enums.ParseMode.HTML
-    #     )    
-    #     return     
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
