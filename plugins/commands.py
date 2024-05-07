@@ -60,7 +60,7 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-      if message.command[1] == buy_premium :
+    if message.command[1] == buy_premium:
         buttons = [[
             InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
         ],[
