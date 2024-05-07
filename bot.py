@@ -13,7 +13,7 @@ from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, LOG_CHANNEL, POR
 from utils import temp
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
-	@@ -22,86 +34,64 @@
+
 from aiohttp import web
 from plugins import web_server
 
