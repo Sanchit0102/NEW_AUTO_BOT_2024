@@ -13,23 +13,23 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '25902975'))
-API_HASH = environ.get('API_HASH', 'bf9ebb30c8c6c4745031de8452d06025')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6489451868:AAExCwb9RDjvqjItHHegBPfA_7lcYPBpL4Y")
+API_ID = int(environ.get('API_ID', 25833520))
+API_HASH = environ.get('API_HASH', "7d012a6cbfabc2d0436d7a09d8362af7")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7016777070:AAFv3_64vEyivvXeRyY75Q_KddmfdGR5Mew")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://graph.org/file/17b7d82fd5a1e40ff88b5.jpg')).split()
-NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
-SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
-VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/10f9dac6eab3247e35831.jpg")
+PICS = (environ.get('PICS', 'https://te.legra.ph/file/e8876d6689b687de24fbe.png')).split()
+NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/e8876d6689b687de24fbe.png")
+MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/6657f10a33d40c047f875.mp4")
+SPELL_IMG = environ.get("SPELL_IMG", "https://graph.org/file/7db384d955159386d1060.jpg")
+VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/cf2a38e916d9388212ec7.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6643691556').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001863861150').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '921365334 1562935405 7053097886').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002016803498').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
@@ -38,87 +38,87 @@ auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001820866177')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002119416002')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001953320653')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", False))
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://AutoFilter:B2v1nAKDMuGmyWJ9@cluster0.kdqcnvh.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "AutoFilter")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'AutoFilter')
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://trumbot:trumbot@cluster0.cfkaeno.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME', "DSXUNKNOWN")
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'easysky.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'af77f68713ff5ec1e9e7a2b843cc29e85ceb855a')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'f12bdd3c5c118fdc7ab6dd26bbf360968923f379')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Unknown_Cinema')
-SPRT_GRP = environ.get('SPRT_GRP', 'https://t.me/Unknown_Cinema')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Unknown_Cinema')
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+CRxXz6AAWTQ4ZWFl')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+CZH0JaSwih44ZTM1')
+SPRT_GRP = environ.get('SPRT_GRP', 'https://t.me/+ZSUTmOXuwqxlODk1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/THE_SILENT_TEAMS')
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/Robo_5_0/40')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
-HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/+CRxXz6AAWTQ4ZWFl')
+HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/Robo_5_0/40')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001807254628'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DQ_The_File_Donor_Support')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002016803498'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'THE_SILENT_TEAMS')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), True)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "[{file_name}](https://t.me/The_Silent_Teams)\n\n<b>Join Our Offical Channel & Group @The_Silent_Teams ❤️") # f"{script.CAPTION}")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", f"{script.IMDB_TEMPLATE_TXT}")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1002119416002')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True)
 
 # Online Stream and Download
-NO_PORT = bool(environ.get('NO_PORT', False))
-APP_NAME = None
-if 'DYNO' in environ:
-    ON_HEROKU = True
-    APP_NAME = environ.get('APP_NAME')
-else:
-    ON_HEROKU = False
-BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN, PORT)
-SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
-WORKERS = int(environ.get('WORKERS', '4'))
-SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
-MULTI_CLIENT = False
-name = str(environ.get('name', 'LazyPrincess'))
-PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-if 'DYNO' in environ:
-    ON_HEROKU = True
-    APP_NAME = str(getenv('APP_NAME'))
+# NO_PORT = bool(environ.get('NO_PORT', False))
+# APP_NAME = None
+# if 'DYNO' in environ:
+#     ON_HEROKU = True
+#     APP_NAME = environ.get('APP_NAME')
+# else:
+#     ON_HEROKU = False
+# BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
+# FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
+# URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+#     "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN, PORT)
+# SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
+# WORKERS = int(environ.get('WORKERS', '4'))
+# SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
+# MULTI_CLIENT = False
+# name = str(environ.get('name', 'LazyPrincess'))
+# PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
+# if 'DYNO' in environ:
+#     ON_HEROKU = True
+#     APP_NAME = str(getenv('APP_NAME'))
 
-else:
-    ON_HEROKU = False
-HAS_SSL=bool(getenv('HAS_SSL',False))
-if HAS_SSL:
-    URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
-else:
-    URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
+# else:
+#     ON_HEROKU = False
+# HAS_SSL=bool(getenv('HAS_SSL',False))
+# if HAS_SSL:
+#     URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
+# else:
+#     URL = "https://unknown--ibot-991747530105.herokuapp.com/".format(FQDN)
 
 
 
-LANGUAGES = ["malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
+LANGUAGES = ["marathi", "mar", "gujarati", "guj", "malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
 
-QUALITY = ["PreDvd", "S Print", "HDTS", "HDTC", "480P", "720P" ,"1080P", "2160P"]
+QUALITY = ["240P", "360P", "480P", "560P", "720P" ,"1080P", "2160P"]
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 
 
