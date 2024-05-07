@@ -10,7 +10,7 @@ from pyrogram import Client, filters
 
 
 
-@Client.on_message(filters.command(["stickerid"]))
+@Client.on_message(filters.command(["sticker"]))
 
 async def stickerid(bot, message):   
 
