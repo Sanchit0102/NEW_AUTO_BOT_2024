@@ -65,7 +65,7 @@ async def start(client, message):
           buttons = [[
                     InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
                   ],[
-                    InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
+                    InlineKeyboardButton('🔒 Cʟᴏsᴇ', callback_data='close_data')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_text(
