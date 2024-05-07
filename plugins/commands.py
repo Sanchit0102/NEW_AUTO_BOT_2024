@@ -25,9 +25,9 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[                                       
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url="https://t.me/Unknown_Cinema"), 
-                    InlineKeyboardButton('Rᴜʟᴇs', url="https://telegra.ph/How-to-get-movies--series-from-Bot-10-14-2")
-                ]]
+                    InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/The_Silent_Teams'),
+                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/+FdummGOQm3NlMDBl')
+                  ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup, disable_web_page_preview=True)
@@ -42,12 +42,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[                                         
-                    InlineKeyboardButton('Aɴʏ Qᴜᴇʀʏ', url="t.me/Unknown_Support_Bot"), 
-                    InlineKeyboardButton('Sᴛᴀᴛs', callback_data='stats')
-
-                ]]
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                  ],[
+                    InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭 ', url='https://t.me/+CZH0JaSwih44ZTM1'),
+                    InlineKeyboardButton('☘️ Sᴜᴘᴘᴏʀᴛ ☘️', url='https://t.me/+FdummGOQm3NlMDBl')
+                  ],[
+                    InlineKeyboardButton('☀️ ᴊᴏɪɴ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ ☀️', url='https://t.me/The_Silent_Teams'),
+                  ],[
+                    InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', callback_data='premium')
+                  ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -57,7 +60,20 @@ async def start(client, message):
             parse_mode=enums.ParseMode.HTML
         )
         return
-    
+    if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help", "buy_premium"]:
+        if message.command[1] == "buy_premium":
+          buttons = [[
+                    InlineKeyboardButton('𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦', url='https://t.me/Man_With_SilentBot')
+                  ],[
+                    InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start')
+                  ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_text(
+            text=script.DS_TEXT,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )    
+        return     
     if AUTH_CHANNEL and not await is_subscribed(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
@@ -88,12 +104,15 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-                ],[                                         
-                    InlineKeyboardButton('Aɴʏ Qᴜᴇʀʏ', url="t.me/Unknown_Support_Bot"), 
-                    InlineKeyboardButton('Sᴛᴀᴛs', callback_data='stats')
-
-                ]]
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                  ],[
+                    InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', callback_data='premium')
+                  ],[
+                    InlineKeyboardButton('❗ Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='about'),
+                  ],[
+                    InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
+                  ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -136,7 +155,6 @@ async def start(client, message):
             if f_caption is None:
                 f_caption = f"{title}"
             try:
-                # Create the inline keyboard button with callback_data
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
@@ -145,8 +163,9 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
-                         ]
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ]
                         ]
                     )
                 )
@@ -161,8 +180,9 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
-                         ]
+                          InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
+                          InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
+                       ]
                         ]
                     )
                 )
@@ -172,7 +192,44 @@ async def start(client, message):
             await asyncio.sleep(1) 
         await sts.delete()
         return
-    
+                
+                # Create the inline keyboard button with callback_data
+        #         await client.send_cached_media(
+        #             chat_id=message.from_user.id,
+        #             file_id=msg.get("file_id"),
+        #             caption=f_caption,
+        #             protect_content=msg.get('protect', False),
+        #             reply_markup=InlineKeyboardMarkup(
+        #                 [
+        #                  [
+        #                   InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+        #                  ]
+        #                 ]
+        #             )
+        #         )
+        #     except FloodWait as e:
+        #         await asyncio.sleep(e.x)
+        #         logger.warning(f"Floodwait of {e.x} sec.")
+        #         await client.send_cached_media(
+        #             chat_id=message.from_user.id,
+        #             file_id=msg.get("file_id"),
+        #             caption=f_caption,
+        #             protect_content=msg.get('protect', False),
+        #             reply_markup=InlineKeyboardMarkup(
+        #                 [
+        #                  [
+        #                   InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+        #                  ]
+        #                 ]
+        #             )
+        #         )
+        #     except Exception as e:
+        #         logger.warning(e, exc_info=True)
+        #         continue
+        #     await asyncio.sleep(1) 
+        # await sts.delete()
+        # return
+                
     elif data.split("-", 1)[0] == "DSTORE":
         sts = await message.reply("<b>Please wait...</b>")
         b_string = data.split("-", 1)[1]
@@ -317,7 +374,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                      InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', url='https://t.me/SilentHelper_bot') #Don't change anything without contacting me @LazyDeveloperr
                      ]
                     ]
                 )
@@ -378,7 +435,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                      [
-                      InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+                      InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', url='https://t.me/SilentHelper_bot') #Don't change anything without contacting me @LazyDeveloperr
                      ]
                    ]
         
@@ -440,7 +497,7 @@ async def start(client, message):
              [
               InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK)
              ],[
-              InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', callback_data=f'generate_stream_link:{file_id}') #Don't change anything without contacting me @LazyDeveloperr
+              InlineKeyboardButton('Fᴀsᴛ Dᴏᴡɴʟᴏᴀᴅ / Wᴀᴛᴄʜ Oɴʟɪɴᴇ', url='https://t.me/SilentHelper_bot') #Don't change anything without contacting me @LazyDeveloperr
              ]
             ]
         )
