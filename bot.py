@@ -15,6 +15,7 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script
 from aiohttp import web
+import pytz
 class Bot(Client):
 
     def __init__(self):
@@ -129,7 +130,6 @@ app.run()
 # from pyrogram import types
 # from Script import script 
 # from datetime import date, datetime 
-# import pytz
 # from aiohttp import web
 # from plugins import web_server
 
