@@ -1,5 +1,7 @@
 #(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
-import os
+# Dont Try To Change Anything Without My Permission, Bcos I Do My Hard Work In This Repo !
+# I Dont want To Touch Anyone To This repo 😐
+import os 
 import logging
 import random
 import asyncio
