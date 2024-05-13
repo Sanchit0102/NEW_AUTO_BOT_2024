@@ -1,3 +1,5 @@
+#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
+
 import re
 from os import environ,getenv
 from Script import script 
