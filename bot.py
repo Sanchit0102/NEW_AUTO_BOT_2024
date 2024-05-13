@@ -1,3 +1,4 @@
+#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
 import logging
 import logging.config
 
