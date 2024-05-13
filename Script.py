@@ -9,7 +9,11 @@ class script(object):
 
     HELP_TXT = """<b>Hᴇʏ {}
     
-Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
+Tʜɪꜱ Bᴏᴛ Iꜱ Mᴀᴅᴇ Fᴏʀ Tᴏ Gᴇᴛ Mᴏᴠɪᴇꜱ Aꜱ Yᴏᴜ Wᴀɴᴛ !
+ɪᴜꜱᴛ Sᴇɴᴅ Mᴏᴠɪᴇ ᴏʀ Sᴇʀɪᴇꜱ Nᴀᴍᴇ Oɴʟʏ !
+Cᴀꜱᴇ ᴏғ ᴄᴏᴘʏʀɪɢʜᴛ ᴅɪʀᴇᴄᴛ ᴛᴀʟᴋ : [YᴏᴜʀSᴇʟғ](tg://settings)
+
+<blockquote>Hᴇʀᴇ Iꜱ Sᴏᴍᴇ Uꜱᴇғᴜʟ Bᴏᴛꜱ Mᴀᴅᴇ Bʏ <a href="https://t.me/THE_SILENT_TEAMS">Tʜᴇ Sɪʟᴇɴᴛ Tᴇᴀᴍ</a></blockquote></b>"""
 
     DS_TEXT  = """<b>𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐢𝐥𝐞𝐧𝐭 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐘𝐨𝐣𝐚𝐧𝐚</b>
 
