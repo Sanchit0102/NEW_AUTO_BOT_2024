@@ -1,3 +1,4 @@
+#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
 # Kanged From @TroJanZheX
 import asyncio
 import re
