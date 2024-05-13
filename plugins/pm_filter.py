@@ -1504,7 +1504,23 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    
+    elif query.data == "help":
+        buttons = [[
+            InlineKeyboardButton('Pᴜʙʟɪᴄ Fɪʟᴇꜱᴛᴏʀᴇ', url='https://t.me/PublicFileStore01_Bot'),
+            InlineKeyboardButton('Pᴜʙʟɪᴄ Fɪʟᴇ Sᴛʀᴇᴀᴍ', url='https://t.me/PublicFileToLink01Bot')
+        ], [
+            InlineKeyboardButton('Sɪʟᴇɴᴛ Fɪʟᴇ Sᴛʀᴇᴀᴍ', url='https://t.me/SilentHelper_bot'),
+            InlineKeyboardButton('Sɪʟᴇɴᴛ Aᴜᴛᴏ Bᴏᴛ', url='https://t.me/silent_team_autobot')
+        ], [
+            InlineKeyboardButton('⟸ Gᴏ Tᴏ Hᴏᴍᴇ', callback_data='start')
+        ]]
+        
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', callback_data='premium')            
