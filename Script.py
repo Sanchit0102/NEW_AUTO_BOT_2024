@@ -1,3 +1,5 @@
+#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
+
 class script(object):
     START_TXT = """<b>ʜᴇʟʟᴏ {}
 
