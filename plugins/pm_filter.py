@@ -1,5 +1,6 @@
 #(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
-# Kanged From @TroJanZheX
+# Dont Try To Change Anything Without My Permission, Bcos I Do My Hard Work In This Repo !
+# I Dont want To Touch Anyone To This Code 😐
 import asyncio
 import re
 import ast
