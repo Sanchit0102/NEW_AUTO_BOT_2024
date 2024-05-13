@@ -1,6 +1,7 @@
-#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
+                               # (©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ #
 # Dont Try To Change Anything Without My Permission, Bcos I Do My Hard Work In This Repo !
-# I Dont want To Touch Anyone To This repo 😐
+# I Dont want To Touch Anyone To This Code 😐
+
 import os 
 import logging
 import random
