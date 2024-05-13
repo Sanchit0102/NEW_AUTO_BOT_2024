@@ -1,3 +1,4 @@
+#(©) 𝚂𝙰𝙽𝙲𝙷𝙸𝚃 ♛⛧ 
 from aiohttp import web
 
 routes = web.RouteTableDef()
