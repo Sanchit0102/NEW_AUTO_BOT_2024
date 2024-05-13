@@ -43,7 +43,7 @@ BUTTONS1 = {}
 BUTTONS2 = {}
 SPELL_CHECK = {}
 # ENABLE_SHORTLINK = ""
-DS_REACT = ["🔥", "❤️", "😍"]
+DS_REACT = ["🔥", "❤️", "😍", "👍🏻", "🥱"]
 
 @Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
 async def give_filter(client, message):
