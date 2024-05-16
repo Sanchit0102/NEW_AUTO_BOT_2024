@@ -12,10 +12,21 @@ class script(object):
     HELP_TXT = """<b>Hᴇʏ {}
     
 Tʜɪꜱ Bᴏᴛ Iꜱ Mᴀᴅᴇ Fᴏʀ Tᴏ Gᴇᴛ Mᴏᴠɪᴇꜱ Aꜱ Yᴏᴜ Wᴀɴᴛ !
-ɪᴜꜱᴛ Sᴇɴᴅ Mᴏᴠɪᴇ ᴏʀ Sᴇʀɪᴇꜱ Nᴀᴍᴇ Oɴʟʏ !
-Cᴀꜱᴇ ᴏғ ᴄᴏᴘʏʀɪɢʜᴛ ᴅɪʀᴇᴄᴛ ᴛᴀʟᴋ : [YᴏᴜʀSᴇʟғ](tg://settings)
+Jᴜꜱᴛ Sᴇɴᴅ Mᴏᴠɪᴇ ᴏʀ Sᴇʀɪᴇꜱ Nᴀᴍᴇ Oɴʟʏ !
+Cᴀꜱᴇ ᴏғ ᴄᴏᴘʏʀɪɢʜᴛ ᴅɪʀᴇᴄᴛ ᴛᴀʟᴋ : <a href="tg://settings">YᴏᴜʀSᴇʟғ</a>
 
 <blockquote>Hᴇʀᴇ Iꜱ Sᴏᴍᴇ Uꜱᴇғᴜʟ Bᴏᴛꜱ Mᴀᴅᴇ Bʏ <a href="https://t.me/THE_SILENT_TEAMS">Tʜᴇ Sɪʟᴇɴᴛ Tᴇᴀᴍ</a></blockquote></b>"""
+
+    DSBOT_TEXT = """<b>Namaskar {} 🙏🏻, 
+
+If You Want Any Type Of Bot Then Contact My Develpoer,
+
+💥 Any Kind Of Server & Bot Service Avaliable, in Cheapest Price !
+💥 Trusted, Helpful & Easy To Working !  
+💥 All Types Of Bot Avaliable
+💥 Customization in Bot or Repo Avaliable   
+
+<b><blockquote>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭: 👉🏻 @THE_DS_OFFICIAL 👈🏻</blockquote></b>"""
 
     DS_TEXT  = """<b>𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐓𝐨 𝐒𝐢𝐥𝐞𝐧𝐭 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐘𝐨𝐣𝐚𝐧𝐚</b>
 
