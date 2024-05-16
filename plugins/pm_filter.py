@@ -47,34 +47,78 @@ SPELL_CHECK = {}
 # ENABLE_SHORTLINK = ""
 DS_REACT = ["🔥", "❤️", "😍"]
 
-@Client.on_message((filters.group | filters.private) & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & filters.incoming)
 async def give_filter(client, message):
     if message.chat.id != SUPPORT_CHAT_ID:
         await message.react(emoji=random.choice(DS_REACT))
-        manual = await manual_filters(client, message)
-        if manual == False:
-            settings = await get_settings(message.chat.id)
-            try:
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message)
-            except KeyError:
-                grpid = await active_connection(str(message.from_user.id))
-                await save_group_settings(grpid, 'auto_ffilter', True)
+        glob = await global_filters(client, message)
+        if glob == False:
+            manual = await manual_filters(client, message)
+            if manual == False:
                 settings = await get_settings(message.chat.id)
-                if settings['auto_ffilter']:
-                    await auto_filter(client, message) 
-    else: #a better logic to avoid repeated lines of code in auto_filter function
+                try:
+                    if settings["auto_ffilter"]:
+                        await auto_filter(client, message)
+                except KeyError:
+                    grpid = await active_connection(str(message.from_user.id))
+                    await save_group_settings(grpid, "auto_ffilter", True)
+                    settings = await get_settings(message.chat.id)
+                    if settings["auto_ffilter"]:
+                        await auto_filter(client, message)
+    else:
         search = message.text
-        temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
+        temp_files, temp_offset, total_results = await get_search_results(
+            chat_id=message.chat.id, query=search.lower(), offset=0, filter=True
+        )
         if total_results == 0:
             return
         else:
             reply_message = await message.reply_text(
-                text=f"<b>Hᴇʏ {message.from_user.mention} 😍,\n\nɪ ғᴏᴜɴᴅ {str(total_results)} ʀᴇsᴜʟᴛs ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search},\n\nʙᴜᴛ ɪ ᴄᴀɴ'ᴛ sᴇɴᴅ ʜᴇʀᴇ 🤞🏻 ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ✨\n\n</b>",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Sᴇᴀʀᴄʜ ʜᴇʀᴇ ", url=f"https://t.me/Marathi_Auto_Group")]])
-    )
-    await asyncio.sleep(5 * 60)
-    await reply_message.delete()
+                text=f"<b>Hᴇʏ ᴅᴇᴀʀ {message.from_user.mention}, {str(total_results)} ʀᴇsᴜʟᴛs ᴀʀᴇ ғᴏᴜɴᴅ ɪɴ ᴍʏ ᴅᴀᴛᴀʙᴀsᴇ ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ : {search}\n\nᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ sᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ғɪʟᴇs.\nTʜɪs ɪs ᴀ ᴅɪsᴄᴜssɪᴏɴ ɢʀᴏᴜᴘ sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ'ᴛ Gᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ...\n\nआमच्या ग्रुपमध्ये सामील व्हा 🙏🏻</b>",
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                "📝 Sᴇᴀʀᴄʜ ʜᴇʀᴇ",
+                                url=f"https://t.me/Marathi_Auto_Group",
+                            )
+                        ]
+                    ]
+                ),
+                parse_mode=enums.ParseMode.HTML,
+            )
+
+            await asyncio.sleep(5 * 60)
+            await reply_message.delete()
+
+# @Client.on_message((filters.group | filters.private) & filters.text & filters.incoming) # <<< Dont Uncomment >>>
+# async def give_filter(client, message):
+#     if message.chat.id != SUPPORT_CHAT_ID:
+#         await message.react(emoji=random.choice(DS_REACT))
+#         manual = await manual_filters(client, message)
+#         if manual == False:
+#             settings = await get_settings(message.chat.id)
+#             try:
+#                 if settings['auto_ffilter']:
+#                     await auto_filter(client, message)
+#             except KeyError:
+#                 grpid = await active_connection(str(message.from_user.id))
+#                 await save_group_settings(grpid, 'auto_ffilter', True)
+#                 settings = await get_settings(message.chat.id)
+#                 if settings['auto_ffilter']:
+#                     await auto_filter(client, message) 
+#     else: #a better logic to avoid repeated lines of code in auto_filter function
+#         search = message.text
+#         temp_files, temp_offset, total_results = await get_search_results(chat_id=message.chat.id, query=search.lower(), offset=0, filter=True)
+#         if total_results == 0:
+#             return
+#         else:
+#             reply_message = await message.reply_text(
+#                 text=f"<b>Hᴇʏ {message.from_user.mention} 😍,\n\nɪ ғᴏᴜɴᴅ {str(total_results)} ʀᴇsᴜʟᴛs ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search},\n\nʙᴜᴛ ɪ ᴄᴀɴ'ᴛ sᴇɴᴅ ʜᴇʀᴇ 🤞🏻 ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ✨\n\n</b>",
+#                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Sᴇᴀʀᴄʜ ʜᴇʀᴇ ", url=f"https://t.me/Marathi_Auto_Group")]])
+#     )
+#     await asyncio.sleep(5 * 60)
+#     await reply_message.delete()
                 
 @Client.on_message(filters.private & filters.text & filters.incoming)
 async def pm_text(bot, message):
