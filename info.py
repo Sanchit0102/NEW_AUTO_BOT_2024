@@ -119,6 +119,7 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True
 
 
 LANGUAGES = ["marathi", "mar", "gujarati", "guj", "malayalam", "mal", "tamil", "tam" ,"english", "eng", "hindi", "hin", "telugu", "tel", "kannada", "kan"]
+YEARS = ["2024", "2023","2022","2021","2020","2019","2018",'2017', "2016","2015", "2014" , "2013" , "2012" , "2011","2010","2009","2008","2007","2006","2005","2004"]
 
 QUALITY = ["240P", "360P", "480P", "560P", "720P" ,"1080P", "2160P"]
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
