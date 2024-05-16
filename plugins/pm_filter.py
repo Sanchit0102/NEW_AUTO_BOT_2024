@@ -796,14 +796,14 @@ async def quality_cb_handler(client: Client, query: CallbackQuery):
     await query.edit_message_reply_markup(InlineKeyboardMarkup(btn))
     
 @Client.on_callback_query(filters.regex(r"^fq#"))
-async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
-    _, lang, key = query.data.split("#")
+async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
+    _, qual, key = query.data.split("#")
     curr_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     search = FRESH.get(key)
     search = search.replace("_", " ")
-    baal = lang in search
+    baal = qual in search
     if baal:
-        search = search.replace(quali, "")
+        search = search.replace(qual, "")
     else:
         search = search
     req = query.from_user.id
@@ -818,7 +818,7 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
             )
     except:
         pass
-    if quli != "homepage":
+    if qual != "homepage":
         search = f"{search} {quali}" 
     BUTTONS[key] = search
 
