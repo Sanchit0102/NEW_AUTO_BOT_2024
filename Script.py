@@ -67,7 +67,7 @@ Tᴏᴘ Pʟᴀɴ ⭐️
 <b><blockquote>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐁𝐮𝐲: 👉🏻 @Man_With_SilentBot 👈🏻</blockquote></b>"""
 
     ABOUT_TXT = """<b>✯ Mʏ Nᴀᴍᴇ: {}
-✯ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/The_Silent_Teams>The Silent Teams</a></b>
+✯ Cʀᴇᴀᴛᴏʀ: <a href=https://t.me/The_Silent_Teams>The Silent Teams</a>
 ✯ Lɪʙʀᴀʀʏ: <a href='https://docs.pyrogram.org/'>Pʏʀᴏɢʀᴀᴍ</a>
 ✯ Dᴇᴠᴇʟᴏᴘᴇʀ: <a href='https://t.me/THE_DS_OFFICIAL'>Cʟɪᴄᴋ Hᴇʀᴇ</a>
 ✯ Mʏ Fʀɪᴇɴᴅ: <a href='tg://settings'>Cʟɪᴄᴋ Hᴇʀᴇ</a>
