@@ -19,12 +19,12 @@ Cᴀꜱᴇ ᴏғ ᴄᴏᴘʏʀɪɢʜᴛ ᴅɪʀᴇᴄᴛ ᴛᴀʟᴋ : <a href="
 
     DSBOT_TEXT = """<b>Namaskar {} 🙏🏻, 
 
-If You Want Any Type Of Bot Then Contact My Develpoer,
+<u>If You Want Any Type Of Bot Then Contact My Develpoer,</u>
 
 💥 Any Kind Of Server & Bot Service Avaliable, in Cheapest Price !
 💥 Trusted, Helpful & Easy To Working !  
 💥 All Types Of Bot Avaliable
-💥 Customization in Bot or Repo Avaliable   
+💥 Customization in Bot or Repo Avaliable</b>   
 
 <b><blockquote>𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐌𝐚𝐤𝐞 𝐘𝐨𝐮𝐫 𝐁𝐨𝐭: 👉🏻 @THE_DS_OFFICIAL 👈🏻</blockquote></b>"""
 
