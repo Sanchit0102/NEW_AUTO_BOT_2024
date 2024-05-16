@@ -69,7 +69,7 @@ async def give_filter(client, message):
         if total_results == 0:
             return
         else:
-            return await message.reply_text(
+            reply_message = await message.reply_text(
                 text=f"<b>Hᴇʏ {message.from_user.mention} 😍,\n\nɪ ғᴏᴜɴᴅ {str(total_results)} ʀᴇsᴜʟᴛs ғᴏʀ ʏᴏᴜʀ ᴏ̨ᴜᴇʀʏ {search},\n\nʙᴜᴛ ɪ ᴄᴀɴ'ᴛ sᴇɴᴅ ʜᴇʀᴇ 🤞🏻 ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ᴏᴜʀ ʀᴇǫᴜᴇsᴛ ɢʀᴏᴜᴘ ᴛᴏ ɢᴇᴛ ✨\n\n</b>",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 Sᴇᴀʀᴄʜ ʜᴇʀᴇ ", url=f"https://t.me/Marathi_Auto_Group")]])
     )
