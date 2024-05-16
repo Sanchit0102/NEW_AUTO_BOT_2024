@@ -7,7 +7,7 @@ class script(object):
 ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴇɴᴊᴏʏ.
 ɪ ᴡᴏʀᴋ ᴏɴ ʙᴏᴛʜ ɢʀᴏᴜᴘ ᴀɴᴅ ᴘᴍ.</b>
 
-<b><blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/THE_SILENT_TEAMS">Tʜᴇ Sɪʟᴇɴᴛ Tᴇᴀᴍ</a></blockquote></b>"""
+<b><blockquote>ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/THE_DS_OFFICIAL">Tʜᴇ Sɪʟᴇɴᴛ Tᴇᴀᴍ</a></blockquote></b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
     
