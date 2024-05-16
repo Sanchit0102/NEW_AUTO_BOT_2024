@@ -30,7 +30,7 @@ async def start(client, message):
                     InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[                                       
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/The_Silent_Teams'),
-                    InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/+FdummGOQm3NlMDBl')
+                    InlineKeyboardButton('Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ', url='https://t.me/+x-eTArM0uu5mZDJl')
                   ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -48,10 +48,10 @@ async def start(client, message):
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
-                    InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭 ', url='https://t.me/+CZH0JaSwih44ZTM1'),
-                    InlineKeyboardButton('☘️ Sᴜᴘᴘᴏʀᴛ ☘️', url='https://t.me/+FdummGOQm3NlMDBl')
+                    InlineKeyboardButton('🎭 ᴍʏ ɢʀᴏᴜᴘ 🎭 ', url='https://t.me/Marathi_Auto_Group'),
+                    InlineKeyboardButton('☘️ Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ ☘️', url='https://t.me/+x-eTArM0uu5mZDJl')
                   ],[
-                    InlineKeyboardButton('☀️ ᴊᴏɪɴ ᴛʜɪꜱ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴜꜱᴇ ᴍᴇ ☀️', url='https://t.me/The_Silent_Teams'),
+                    InlineKeyboardButton('Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ Bᴏᴛꜱ 🤖', callback_data='bots')
                   ],[
                     InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', callback_data='premium')
                   ]]
@@ -110,6 +110,7 @@ async def start(client, message):
         buttons = buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ],[
+                    InlineKeyboardButton('Mᴀᴋᴇ Yᴏᴜʀ Oᴡɴ Bᴏᴛꜱ 🤖', callback_data='bots'),
                     InlineKeyboardButton('Gᴇᴛ Sɪʟᴇɴᴛ Pʀᴇᴍɪᴜᴍ YᴏJᴀɴᴀ 🔥', callback_data='premium')
                   ],[
                     InlineKeyboardButton('❗ Hᴇʟᴘ', callback_data='help')
