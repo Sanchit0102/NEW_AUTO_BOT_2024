@@ -52,10 +52,10 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "marathi")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'tnshort.net')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'f12bdd3c5c118fdc7ab6dd26bbf360968923f379')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
