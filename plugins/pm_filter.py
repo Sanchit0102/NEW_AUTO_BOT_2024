@@ -79,7 +79,7 @@ async def give_filter(client, message):
                     [
                         [
                             InlineKeyboardButton(
-                                "📝 Sᴇᴀʀᴄʜ ʜᴇʀᴇ",
+                                "🎭 येथून चित्रपट घ्या",
                                 url=f"https://t.me/Marathi_Auto_Group",
                             )
                         ]
