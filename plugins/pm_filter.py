@@ -324,7 +324,7 @@ async def languages_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"",
+                f"⚠️ Jᴀʟᴅɪ Yᴀʜᴀ Sᴇ Hᴀᴛᴏ !",
                 # f"⚠️ ʜᴇʟʟᴏ{query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ,\nʀᴇQᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
@@ -479,7 +479,8 @@ async def years_cb_handler(client: Client, query: CallbackQuery):
     try:
         if int(query.from_user.id) not in [query.message.reply_to_message.from_user.id, 0]:
             return await query.answer(
-                f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ,\nʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
+                f"⚠️ Jᴀʟᴅɪ Yᴀʜᴀ Sᴇ Hᴀᴛᴏ !",
+                # f"⚠️ ʜᴇʟʟᴏ {query.from_user.first_name},\nᴛʜɪꜱ ɪꜱ ɴᴏᴛ ʏᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ,\nʀᴇǫᴜᴇꜱᴛ ʏᴏᴜʀ'ꜱ...",
                 show_alert=True,
             )
     except:
@@ -1638,8 +1639,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         #     print(e)  # print the error message
         #     await query.answer(f"☣something went wrong sweetheart\n\n{e}", show_alert=True)
         #     return
-    # don't change anything without contacting me @creatorrio
-
+    # don't change anything without contacting me @Sanchit0102
     elif query.data == "reqinfo":
         await query.answer(text=script.REQINFO, show_alert=True)
 
