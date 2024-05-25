@@ -129,8 +129,8 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.react(emoji=random.choice(DS_REACT))
     await message.reply_text(
-         text=f"<b>ʜᴇʏ {user} 😍 ,\n\nʏᴏᴜ ᴄᴀɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇs ꜰʀᴏᴍ ʜᴇʀᴇ. ʀᴇǫᴜᴇsᴛ ɪᴛ ɪɴ ᴏᴜʀ <a href=https://t.me/Marathi_Auto_Group>ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ</a> ᴏʀ ᴄʟɪᴄᴋ ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ 👇</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📝 ʀᴇǫᴜᴇsᴛ ʜᴇʀᴇ ", url=f"https://t.me/Marathi_Auto_Group")]])
+         text=f"<b>नमस्कार {user} क्षमा करा !,\n\nमी तुम्हाला येथे चित्रपट देऊ शकत नाही 😢 तो चित्रपट मिळवण्यासाठी तुम्ही खालील button वर क्लिक करून माझ्या ग्रुपमध्ये सामील व्हा !!\n\nतुम्हाला चित्रपट मिळून जाईल 😍</b>",   
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭 येथून चित्रपट मिळवा", url=f"https://t.me/Marathi_Auto_Group")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
