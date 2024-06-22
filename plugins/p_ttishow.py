@@ -39,7 +39,7 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-                    InlineKeyboardButton('Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 💥', url="https://t.me/THE_SILENT_TEAMS")
+                    InlineKeyboardButton('Jᴏɪɴ Mʏ Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 💥', url="https://t.me/+x-eTArM0uu5mZDJl")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         d = await message.reply_text(
