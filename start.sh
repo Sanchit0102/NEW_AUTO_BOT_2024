@@ -12,3 +12,4 @@ cd /Sanchit0102/NEW_AUTO_BOT_2024 || exit
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 bot.py
+
