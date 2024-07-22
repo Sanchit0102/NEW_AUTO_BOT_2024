@@ -1,12 +1,21 @@
-if [ -z $UPSTREAM_REPO ]
-then
-  echo "Cloning main Repository"
-  git clone https://github.com/Abhibotssz/filter.git /Souravmkv/AutoFilerAdv 
-else
-  echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Abhibotssz/filter 
-fi
-cd /Auto-filter 
-pip3 install -U -r requirements.txt
-echo "Starting Bot...."
-python3 bot.py
+FROM python:3.10.8-slim-buster
+
+# Update and install necessary packages
+RUN apt update && \
+    apt upgrade -y && \
+    apt install -y git dos2unix
+
+# Copy and install Python dependencies
+COPY requirements.txt /requirements.txt
+RUN pip3 install -U pip && pip3 install -U -r /requirements.txt
+
+# Create working directory and set it
+RUN mkdir /NEW_AUTO_BOT_2024
+WORKDIR /NEW_AUTO_BOT_2024
+
+# Copy the start script and convert line endings
+COPY start.sh /start.sh
+RUN dos2unix /start.sh && chmod +x /start.sh
+
+# Set the command to run the start script
+CMD ["/bin/bash", "/start.sh"]
