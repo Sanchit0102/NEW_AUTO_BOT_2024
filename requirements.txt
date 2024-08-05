@@ -13,7 +13,8 @@ datetime
 pytz
 aiohttp
 jinja2
-
+fuzzywuzzy
+python-Levenshtein
 shortzy
 gTTS==2.3.1
 speedtest==0.0.1
