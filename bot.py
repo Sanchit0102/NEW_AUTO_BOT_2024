@@ -16,12 +16,6 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script
 from plugins import web_server
-import requests
-from flask import Flask
-from threading import Thread
-import pytz
-import time
-from apscheduler.schedulers.background import BackgroundScheduler
 from aiohttp import web
 from datetime import date, datetime 
 
@@ -61,7 +55,8 @@ class Bot(Client):
         await app.setup()
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
-
+        asyncio.create_task(self.keep_alive()) 
+        
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
@@ -72,71 +67,31 @@ class Bot(Client):
         limit: int,
         offset: int = 0,
     ) -> Optional[AsyncGenerator["types.Message", None]]:
-        """Iterate through a chat sequentially.
-        This convenience method does the same as repeatedly calling :meth:`~pyrogram.Client.get_messages` in a loop, thus saving
-        you from the hassle of setting up boilerplate code. It is useful for getting the whole chat messages with a
-        single call.
-        Parameters:
-            chat_id (``int`` | ``str``):
-                Unique identifier (int) or username (str) of the target chat.
-                For your personal cloud (Saved Messages) you can simply use "me" or "self".
-                For a contact that exists in your Telegram address book you can use his phone number (str).
-                
-            limit (``int``):
-                Identifier of the last message to be returned.
-                
-            offset (``int``, *optional*):
-                Identifier of the first message to be returned.
-                Defaults to 0.
-        Returns:
-            ``Generator``: A generator yielding :obj:`~pyrogram.types.Message` objects.
-        Example:
-            .. code-block:: python
-                for message in app.iter_messages("pyrogram", 1, 15000):
-                    print(message.text)
-        """
         current = offset
         while True:
             new_diff = min(200, limit - current)
             if new_diff <= 0:
                 return
-            messages = await self.get_messages(chat_id, list(range(current, current+new_diff+1)))
+            messages = await self.get_messages(chat_id, list(range(current, current + new_diff + 1)))
             for message in messages:
                 yield message
                 current += 1
 
-# =============================[ UPTIME ISSUE FIXED ]================================#
+    async def keep_alive(self):
+        keep_alive_url = "https://new-auto-bot-2024-jke2.onrender.com"  # Replace with your keep-alive URL
+        interval = 5 * 60  # Ping every 25 minutes
 
-
-RENDER_EXTERNAL_URL = environ.get("RENDER_EXTERNAL_URL", "http://localhost:5000")
-
-def ping_self():
-    url = f"{RENDER_EXTERNAL_URL}/alive"
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            logging.info("Ping successful!")
-        else:
-            logging.error(f"Ping failed with status code {response.status_code}")
-    except Exception as e:
-        logging.error(f"Ping failed with exception: {e}")
-
-def start_scheduler():
-    scheduler = BackgroundScheduler(timezone=pytz.utc)
-    scheduler.add_job(ping_self, 'interval', minutes=3)
-    scheduler.start()
-
-app = Flask(__name__)
-
-@app.route('/alive')
-def alive():
-    return "I am alive!"
-
-def run_flask():
-    app.run(host='0.0.0.0', port=10000)
-
-Thread(target=run_flask).start()
-start_scheduler()
+        async with ClientSession() as session:
+            while True:
+                try:
+                    async with session.get(keep_alive_url) as response:
+                        if response.status == 200:
+                            logging.info("Keep-alive ping successful.")
+                        else:
+                            logging.warning(f"Keep-alive ping failed with status: {response.status}")
+                except Exception as e:
+                    logging.error(f"Keep-alive ping failed: {e}")
+                await asyncio.sleep(interval)
 
 
 app = Bot()
