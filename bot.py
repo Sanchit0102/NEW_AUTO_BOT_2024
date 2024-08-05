@@ -16,13 +16,9 @@ from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
 from Script import script
 from plugins import web_server
-import requests
-from flask import Flask
-from threading import Thread
 import pytz
-import time
-from apscheduler.schedulers.background import BackgroundScheduler
-from aiohttp import web
+import asyncio
+from aiohttp import web, ClientSession
 from datetime import date, datetime 
 
 class Bot(Client):
