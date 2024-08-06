@@ -6,11 +6,14 @@ pymongo[srv]==3.12.3
 motor==2.5.1
 marshmallow==3.14.1
 umongo==3.0.1
-requests
 bs4
 git+https://github.com/Joelkb/cinemagoer
 datetime
-pytz
+APScheduler==3.6.3
+requests==2.28.1
+Flask==2.1.2
+Werkzeug==2.1.2
+pytz==2023.3
 aiohttp
 jinja2
 fuzzywuzzy
